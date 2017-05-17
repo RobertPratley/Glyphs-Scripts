@@ -21,7 +21,7 @@ def rebuildManualFeatures(glyphlist):
 							if line.find(glyph)<0:
 								newFeatureCode = newFeatureCode + line + "\n"
 						if len(newFeatureCode) == 0:
-							feaToRemove.append(fName)	
+							feasToRemove.append(fName)	
 						else:
 							rgx = re.compile(r".*{\s*}.*")
 							newFeatureCode = re.sub(rgx, '', newFeatureCode)
