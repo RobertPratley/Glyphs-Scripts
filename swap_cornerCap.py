@@ -7,7 +7,6 @@ from vanilla import *
 class hintSwitch(object):
 	def __init__( self ) :
 		font = Glyphs.font
-		self.cG = font.selectedLayers[0]
 		corners = []
 		caps = []
 		for g in font.glyphs:
